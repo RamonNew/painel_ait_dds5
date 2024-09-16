@@ -2,8 +2,8 @@ import './App.css';
 
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 
-import Home from './components/pages/Home';
-import Login from './components/pages/Login';
+import Home from './components/views/Home';
+import Login from './components/views/Login';
 
 function App() {
   return (
