@@ -8,6 +8,7 @@ import GestaoUsuario from './components/views/GestaoUsuario';
 import ImportCSV from './components/views/ImportCSV';
 import CadastroAula from './components/views/CadastroAula';
 import GestaoAulas from './components/views/GestaoAulas';
+import EditAula from './components/views/EditAula';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/import_csv' element={<ImportCSV/>} />
         <Route path='/cadastro_aula' element={<CadastroAula/>} />
         <Route path='/gestao_aulas' element={<GestaoAulas/>} />
+        <Route path='/edit_aula/:id' element={<EditAula/>} />
       </Routes>
     </Router>
   );

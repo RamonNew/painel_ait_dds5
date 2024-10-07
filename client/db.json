@@ -34,14 +34,14 @@
       "chave": null
     },
     {
-      "id": "0239",
-      "data": "2024-08-29T03:00:00.000Z",
-      "data_hora_inicio": "2024-08-29T21:30:00.000Z",
-      "data_hora_fim": "2024-08-30T01:00:00.000Z",
+      "id": "9a9c",
+      "data": "2024-10-07",
+      "data_hora_inicio": "16:14",
+      "data_hora_fim": "16:14",
       "turma": "AIT-DDS-5",
-      "instrutor": "DANIEL KALEB",
-      "unidade_curricular": "FÍSICA DO MAR",
-      "ambiente": "VTRA-LAB-5-5109",
+      "instrutor": "RAMON DE HOLANDA",
+      "unidade_curricular": "TESTE",
+      "ambiente": "TESTE",
       "chave": null
     }
   ],
