@@ -21,28 +21,6 @@
       "unidade_curricular": "MECÂNICA BÁSICA DE MOTORES DE MOTOCICLETAS (CH: 100.0000)",
       "ambiente": "VTRIA-EXTER-EXTERNO",
       "chave": null
-    },
-    {
-      "id": "1326",
-      "data": "2024-08-29T03:00:00.000Z",
-      "data_hora_inicio": "2024-08-29T21:30:00.000Z",
-      "data_hora_fim": "2024-08-30T01:00:00.000Z",
-      "turma": "HTC-MEC-4-92",
-      "instrutor": "AFONSO DE JESUS CORDEIRO",
-      "unidade_curricular": "DESENVOLVIMENTO DE SISTEMAS DE AUTOMAÇÃO MECÂNICA (CH: 100.0000)",
-      "ambiente": "VTRIA-3-LAB-3003",
-      "chave": null
-    },
-    {
-      "id": "9a9c",
-      "data": "2024-10-07",
-      "data_hora_inicio": "16:14",
-      "data_hora_fim": "16:14",
-      "turma": "AIT-DDS-5",
-      "instrutor": "RAMON DE HOLANDA",
-      "unidade_curricular": "TESTE",
-      "ambiente": "TESTE",
-      "chave": null
     }
   ],
   "imagens": [

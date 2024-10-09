@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-function FormAula({ titulo, textoBotao,handleSubmit,id}) {
+function FormAula({ titulo, textoBotao,handleSubmit,id,tipo}) {
+    const navigate = useNavigate();
+
     const [dataAula, setDataAula] = useState('');
     const [horaInicio, setHoraInicio] = useState('');
     const [horaFim, setHoraFim] = useState('');
@@ -30,7 +33,10 @@ function FormAula({ titulo, textoBotao,handleSubmit,id}) {
             }else{
                 const respostaJSON = await resposta.json();
                 console.log(respostaJSON);
-                setTurma(respostaJSON.turma)
+                setTurma(respostaJSON.turma);
+                setInstrutor(respostaJSON.instrutor);
+                setUnidadeCurricular(respostaJSON.unidade_curricular);
+                setAmbiente(respostaJSON.ambiente);
             }
         } catch (error) {
             console.log(error)
@@ -49,7 +55,8 @@ function FormAula({ titulo, textoBotao,handleSubmit,id}) {
             ambiente:ambiente,
             chave:null
         }    
-        handleSubmit(aula);
+        handleSubmit(aula,id);
+        navigate(`/gestao_aulas/${tipo}`);
     }
 
     return (
