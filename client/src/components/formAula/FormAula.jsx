@@ -11,6 +11,7 @@ function FormAula({ titulo, textoBotao,handleSubmit,id}) {
     
     useEffect(()=>{
         if(id){
+            console.log(id)
             baixarAula(id);
         }
     },[]);
@@ -27,7 +28,9 @@ function FormAula({ titulo, textoBotao,handleSubmit,id}) {
             if (!resposta.ok) {
                 throw new Error('Erro ao buscar aula');
             }else{
-                console.log(JSON.stringify(resposta));
+                const respostaJSON = await resposta.json();
+                console.log(respostaJSON);
+                setTurma(respostaJSON.turma)
             }
         } catch (error) {
             console.log(error)
