@@ -19,7 +19,7 @@ function TabelaAulas({tipo,onDeleteSuccess}) {
                 }
             });
 
-            if (!resposta) {
+            if (!resposta.ok) {
                 throw new Error('Erro ao buscar aulas');
             }
             const consulta = await resposta.json();
