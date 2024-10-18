@@ -8,6 +8,9 @@ export async function criarAula(req,res) {
     //Criando constante com a requisição
     const aula = req.body;
 
+    //Exibindo corpo da requisição
+    console.log(aula);
+
     //Tentando criar aula
     try {
         const [status,resposta] = await createAula(aula);
